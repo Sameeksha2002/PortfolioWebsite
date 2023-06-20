@@ -1,619 +1,768 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    /* background-color: black; */
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    background-image: url(bodybackground.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-}
-
-html,
-body,
-#home,
-nav,
-#qualification,
-#skill,
-#contact {
-    scroll-behavior: smooth;
-}
-
-
-/* ----------------------------------home--------------------------------------------------- */
-
-#mainhome {
-    background-image: url(underback2.png);
-    /* z-index: -1; */
-}
-
-#home {
-    position: relative;
-    height: 50rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(mountain\ 5.png);
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: rgb(0 0 0) 0px -68px 75px 3px inset;
-    /* box-shadow: 0rem 0rem 1rem 0rem #49274ab2; */
-    z-index: 0;
-}
-
-
-/* #home::after{
+    @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        /* background-color: black; */
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        background-image: url(bodybackground.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        background-size: auto;
+        scroll-snap-type: y mandatory;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    html,
+    body,
+    #home,
+    nav,
+    #qualification,
+    #skill,
+    #contact {
+        scroll-behavior: smooth;
+    }
+    /* ----------------------------------home--------------------------------------------------- */
+    
+    #mainhome {
+        background-image: url(underback2.png);
+        /* z-index: -1; */
+    }
+    
+    #home {
+        position: relative;
+        height: 50rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(mountain\ 5.png);
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: rgb(0 0 0) 0px -68px 75px 3px inset;
+        /* box-shadow: 0rem 0rem 1rem 0rem #49274ab2; */
+        z-index: 0;
+    }
+    /* #home::after{
     
      z-index: 1;
 }  */
-
-
-/* ****************************navbar********************************************** */
-
-nav {
-    /* background-color: white; */
-    position: fixed;
-    width: 100%;
-}
-
-#navbar {
-    display: flex;
-    justify-content: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold;
-    padding: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0.7rem 0 0 0;
-}
-
-#navbar li {
-    margin: 0 3rem 0 1rem;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: white;
-}
-
-#navbar li::after {
-    content: "";
-    width: 0%;
-    height: 0.13em;
-    background: rgb(148, 38, 38);
-    display: block;
-    margin: 0.5rem auto;
-    transition: 0.2s ease-in;
-}
-
-#navbar a:hover {
-    color: rgb(148, 38, 38);
-    font-weight: lighter;
-}
-
-#navbar li:hover::after {
-    width: 80%
-}
-
-#about {
-    margin: 10rem 12.5rem 0rem 12.5rem;
-    padding: 2.8rem 4.5rem 1rem 4.5rem;
-    z-index: -1;
-}
-
-#name {
-    font-size: 4.5rem;
-    text-align: center;
-    font-family: 'Exo 2', sans-serif;
-    margin: 0px;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-#submessage {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.dowbtn {
-    text-decoration: none;
-}
-
-#btn {
-    background-color: #ff6a0000;
-    border: 2px solid white;
-    padding: 1rem 1.5rem;
-    border-radius: 4px;
-    color: white;
-    margin: 1rem auto;
-    font-size: 1.25rem;
-    font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-#btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 2px solid rgb(148, 38, 38);
-    color: rgb(151, 38, 38);
-    transition: 0.7s;
-}
-
-
-/* -------------------------------------------about me-------------------- */
-
-#about_me {
-    height: 63rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 0 10%;
-    background-color: black;
-    box-shadow: rgb(0 0 0) 0px 47px 75px 32px;
-}
-
-.about_cont {
-    color: white;
-    width: 65%;
-}
-
-#ab_topic {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 3rem;
-    color: rgb(209, 60, 60);
-}
-
-#info {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.3rem;
-    color: rgb(224, 222, 222);
-}
-
-#info span {
-    color: rgb(209, 60, 60);
-}
-
-#ab_pic {
-    height: 22rem;
-}
-
-
-/* --------------------------techtools------------------------ */
-
-#skills {
-    height: 50rem;
-    width: 95%;
-    margin: 10rem auto;
-}
-
-#tech_head {
-    font-size: 6rem;
-    color: red;
-    text-shadow: rgb(0, 0, 0) 0 0 20px;
-    text-align: center;
-    font-family: 'Exo 2', sans-serif;
-}
-
-#toolcont {
-    position: relative;
-    width: 80rem;
-    height: 40rem;
-    margin: 5rem auto;
-    font-size: 2.5rem;
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 1.3px;
-}
-
-.skills {
-    position: relative;
-    height: calc(20rem - 4rem);
-    width: calc(20rem - 4rem);
-    float: left;
-    margin: 2rem;
-    background-color: rgba(58, 60, 61, 0.613);
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-    animation: r;
-    box-shadow: rgba(93, 58, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-.skills .skillName {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 34, 35, 0.925);
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.skills:hover .skillName {
-    top: 10rem;
-    background-color: #477ea2;
-}
-
-.skills .skillName h4 {
-    margin: 6rem 1rem;
-    color: red;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.skills:hover .skillName h4 {
-    margin: 1rem;
-    font-size: 2.7rem;
-    color: azure;
-    letter-spacing: 3px;
-}
-
-.skills .content h2 {
-    text-align: center;
-    color: rgba(33, 34, 35, 0.925);
-    margin: 10rem auto 0 auto;
-    transition: 0.5s ease-in-out;
-}
-
-.skills:hover .content h2 {
-    margin: 3.4rem auto 0 auto;
-    color: white;
-}
-
-
-/* ------------------------contact------------------------------ */
-
-#contact {
-    width: 100%;
-    height: 20rem;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgb(0 0 0) 0px 2px 87px 95px;
-}
-
-form {
-    height: 12rem;
-    border-right: 2px solid rgb(210, 97, 97);
-    padding: 0 7rem;
-}
-
-#mesbox h2 {
-    font-size: 3rem;
-    font-family: 'Exo 2', sans-serif;
-    color: rgb(228, 61, 61);
-    margin: 1rem auto;
-}
-
-#feedback {
-    background-color: rgba(96, 162, 171, 0.459);
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 4rem;
-    width: 90%;
-    margin-bottom: 0.3rem;
-    color: white;
-    padding: 1rem;
-}
-
-#feedback:hover {
-    background-color: rgba(52, 98, 103, 0.459);
-}
-
-#submit {
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    font-weight: bold;
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: rgb(25, 125, 139);
-    border-radius: 5px;
-    color: white;
-}
-
-#submit:hover {
-    background-color: black;
-    border: 2px solid rgb(25, 125, 139);
-    color: rgb(25, 125, 139);
-    transition: 0.7s ease-in;
-    font-weight: bold;
-}
-
-#continfo {
-    color: white;
-    margin: auto 8rem;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-#contact h4 {
-    font-size: 3rem;
-    margin: 0 auto 1rem auto;
-    color: #9bcddf;
-}
-
-#contact p {
-    margin: 0;
-}
-
-#mail {
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Nunito Sans', sans-serif;
-    color: rgb(228, 61, 61);
-}
-
-#mail:hover {
-    color: rgb(255, 111, 0);
-    text-decoration: underline;
-    transition: 0.2s ease-in;
-}
-
-.icons {
-    margin: 1rem 0.5rem;
-    height: 2.3rem;
-    opacity: 0.8;
-}
-
-.icons:hover {
-    opacity: 1;
-    transition: 0.2s ease-in;
-}
-
-
-/* ------------responsive-------------------------------- */
-
-@media only screen and (max-width: 1321px) {
-    #about_me {
-        height: 40rem;
+    /* ****************************navbar********************************************** */
+    
+    nav {
+        /* background-color: white; */
+        position: fixed;
+        width: 100%;
+        z-index: 1;
     }
-    #ab_pic {
-        height: 19rem;
+    
+    #navbar {
+        display: flex;
+        justify-content: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+        padding: 0;
     }
-    #info {
-        font-size: 1.25rem;
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0.7rem 0 0 0;
     }
-    #tech_head {
-        font-size: 4rem;
-    }
-    #toolcont {
-        width: 60rem;
-    }
-    #skills {
-        height: 70rem;
-    }
-    #mesbox h2 {
-        font-size: 2.2rem;
-    }
-    #contact h4 {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (max-width: 1081px) {
-    #about_me {
-        width: 90%;
-        padding: 0 5%;
-        height: 29rem;
-    }
-    #ab_pic {
-        height: 16rem;
-    }
-    #ab_topic {
-        font-size: 2rem;
-    }
-    #info {
-        font-size: 1rem;
-    }
-    #mesbox h2 {
-        font-size: 1.7rem;
-    }
-    #contact h4 {
-        font-size: 1.7rem;
-    }
-    form {
-        padding: 0 4rem;
-    }
-    #contact {
-        height: 15rem;
-    }
-    #continfo {
-        margin: auto 3rem;
-    }
-    /* .skills{
-        height:;
-    } */
-    #toolcont {
-        width: 59rem;
-    }
-    .skills {
-        height: 15rem;
-        width: 15rem;
-    }
-}
-
-@media only screen and (max-width: 967px) {
-    #toolcont {
-        width: 46rem;
-        font-size: 1.7rem;
-        margin: 3rem auto;
-    }
-    #skills {
-        height: 51rem;
-    }
-    .skills {
-        height: 11rem;
-        width: 11rem;
-    }
-    .skills .skillName h4 {
-        margin: 4rem 1rem;
-        font-size: 1.6rem;
-    }
-    .skills:hover .skillName {
-        top: 7rem;
-    }
-    .skills:hover .content h2 {
-        margin: 3rem auto 0 auto;
-    }
-    .skills:hover .skillName h4 {
-        margin: 0.5rem;
-        font-size: 1.8rem;
-        letter-spacing: 3px;
-    }
-    #mesbox h2 {
-        font-size: 1.3rem;
-    }
-    #contact h4 {
-        font-size: 1.3rem;
-    }
-    form {
-        height: 10rem;
-        padding: 0 2rem;
-    }
-    #feedback {
-        height: 2rem;
-    }
-    #submit {
-        font-size: 0.6rem;
-    }
-    #continfo p,
-    #mail {
-        font-size: 0.8rem;
-    }
-    #contact {
-        height: 8rem;
-    }
-    #continfo {
-        margin: 0 2rem;
-    }
-    .icons {
-        height: 1.7rem;
-        margin: 0.8rem 0.3rem;
-    }
-}
-
-@media only screen and (max-width: 755px) {
-    #about_me {
-        flex-direction: column-reverse;
-        height: 40rem;
-        padding-top: 2rem;
-    }
-    #toolcont {
-        width: 39rem;
-        font-size: 1.7rem;
-        margin: 2rem auto;
-    }
-    #skills {
-        height: 43rem;
-    }
-    .skills {
-        height: 9rem;
-        width: 9rem;
-    }
-    .skills .skillName h4 {
-        margin: 3.3rem 0.2rem;
-        font-size: 1.6rem;
-    }
-    .skills:hover .skillName {
-        top: 5.7rem;
-    }
-    .skills:hover .content h2 {
-        margin: 2.1rem auto 0 auto;
-    }
-    .skills:hover .skillName h4 {
-        font-size: 1.4rem;
-    }
-    #tech_head {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 649px) {
-    #toolcont {
-        width: 29rem;
-    }
-    #skills {
-        height: 56rem;
-    }
-    #about {
-        padding: 2.8rem 1.4rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    #tech_head {
-        font-size: 2.8rem;
-    }
+    
     #navbar li {
-        margin: 1rem 1.3rem;
+        margin: 0 3rem 0 1rem;
     }
-    #about_me {
-        height: 50rem;
+    
+    #navbar a {
+        text-decoration: none;
+        color: white;
     }
-    .about_cont {
-        margin-top: 2rem;
-        width: 90%;
+    
+    #navbar li::after {
+        content: "";
+        width: 0%;
+        height: 0.13em;
+        background: rgb(148, 38, 38);
+        display: block;
+        margin: 0.5rem auto;
+        transition: 0.2s ease-in;
     }
-    #info {
+    
+    #navbar a:hover {
+        color: rgb(148, 38, 38);
+        font-weight: lighter;
+    }
+    
+    #navbar li:hover::after {
+        width: 80%
+    }
+    
+    #about {
+        margin: 10rem 12.5rem 0rem 12.5rem;
+        padding: 2.8rem 4.5rem 1rem 4.5rem;
+        z-index: -1;
+    }
+    
+    #name {
+        font-size: 4.5rem;
+        text-align: center;
+        font-family: 'Exo 2', sans-serif;
+        margin: 0px;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    #submessage {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-align: center;
         font-size: 1.2rem;
     }
+    
+    .dowbtn {
+        text-decoration: none;
+    }
+    
+    #btn {
+        background-color: #ff6a0000;
+        border: 2px solid white;
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        color: white;
+        margin: 1rem auto;
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    #btn:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 2px solid rgb(148, 38, 38);
+        color: rgb(151, 38, 38);
+        transition: 0.7s;
+    }
+    /* -------------------------------------------about me-------------------- */
+    
+    #about_me {
+        height: 63rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 0 10%;
+        background-color: black;
+        box-shadow: rgb(0 0 0) 0px 47px 75px 32px;
+    }
+    
+    .about_cont {
+        color: white;
+        width: 65%;
+    }
+    
     #ab_topic {
-        font-size: 2.3rem;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 3rem;
+        color: rgb(209, 60, 60);
     }
-    #toolcont {
-        margin: 3.5rem auto;
-        width: 23rem;
+    
+    #info {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.3rem;
+        color: rgb(224, 222, 222);
     }
-    .skills {
-        margin: 1rem;
+    
+    #info span {
+        color: rgb(209, 60, 60);
     }
+    
+    #ab_pic {
+        height: 22rem;
+    }
+    /* --------------------------techtools------------------------ */
+    
     #skills {
-        height: 49rem;
-        margin-top: 12rem;
+        height: 50rem;
+        width: 95%;
+        margin: 17rem auto 5rem auto;
     }
-    #contact {
-        height: 27rem;
+    
+    #tech_head {
+        font-size: 6rem;
+        color: red;
+        text-shadow: rgb(0, 0, 0) 0 0 20px;
+        text-align: center;
+        font-family: 'Exo 2', sans-serif;
+    }
+    
+    #toolcont {
+        position: relative;
+        width: 80rem;
+        height: 40rem;
+        margin: 5rem auto;
+        font-size: 2.5rem;
+        font-family: 'Nunito Sans', sans-serif;
+        letter-spacing: 1.3px;
+        z-index: -1;
+    }
+    
+    .skills {
+        position: relative;
+        height: calc(20rem - 4rem);
+        width: calc(20rem - 4rem);
+        float: left;
+        margin: 2rem;
+        background-color: rgba(58, 60, 61, 0.613);
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: rgba(93, 58, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    
+    .skills .skillName {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 34, 35, 0.925);
+        transition: 0.5s;
+        /* z-index: 2; */
+    }
+    
+    .skills:hover .skillName {
+        top: 10rem;
+        background-color: #477ea2;
+        animation: flip 5s linear 0.4s infinite alternate;
+    }
+    
+    .skills .skillName h4 {
+        margin: 6rem 1rem;
+        color: red;
+        text-align: center;
+        transition: 0.5s;
+    }
+    
+    .skills:hover .skillName h4 {
+        margin: 1rem;
+        font-size: 2.7rem;
+        color: azure;
+        letter-spacing: 3px;
+    }
+    
+    .skills:hover .skillName h4 {
+        margin: 1rem;
+        font-size: 2.7rem;
+        color: azure;
+        letter-spacing: 3px;
+    }
+    
+    .skills .content h2 {
+        text-align: center;
+        color: rgba(33, 34, 35, 0.925);
+        margin: 10rem auto 0 auto;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .skills:hover .content h2 {
+        margin: 3.4rem auto 0 auto;
+        color: white;
+    }
+    /* --------------------------projects--------------------------------------- */
+    
+    #projects {
+        scroll-snap-align: start;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 2rem auto 20rem auto;
+        height: 100vh;
+        box-shadow: rgb(0 0 0) 0px 47px 75px 75px;
+    }
+    
+    .pr_cont {
+        width: 100%;
+        height: 100%;
+        margin: 2rem auto;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    .pr_cont::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .project {
+        scroll-snap-align: start;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bold;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        overflow: hidden;
     }
-    form {
-        margin-bottom: 2rem;
-        border-right: 0;
-        padding: 0;
-        height: 13rem;
-        border-bottom: 2px solid rgb(228, 61, 61);
+    
+    #pr_heading {
+        /* text-align: center; */
+        margin: auto;
+        margin-bottom: 0;
+        color: red;
+        font-family: 'Gasoek One', sans-serif;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
     }
-    #feedback {
-        height: 4rem;
+    
+    #project1 {
+        background-color: rgba(141, 245, 245, 0.104);
     }
-    #submit {
-        font-size: 0.8rem;
-        border: none;
-        margin: 0.5rem 0;
+    
+    #project2 {
+        background-color: rgba(158, 135, 135, 0.349);
     }
-    #mesbox h2 {
+    
+    .pr_name {
+        font-size: 4rem;
+        margin: 0 auto;
+        color: red;
+    }
+    
+    .pr_about {
+        margin: 0 5rem;
+    }
+    
+    .pr_nameAbt {
+        margin: 0 auto 1.5rem auto;
         font-size: 1.5rem;
+        font-weight: lighter;
     }
+  
+    .pr_details {
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+    
+    .pr_modules {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    
+    .pr_modules .module{
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin: 1rem;
+        padding: 0.5rem;
+        font-weight: lighter;
+    }
+
+    
+    .bg_clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -4;
+    }
+    /* ------------------------contact------------------------------ */
+    
+    #contact {
+        width: 100%;
+        height: 20rem;
+        background-color: black;
+        margin: 10rem 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgb(0 0 0) 0px 2px 87px 95px;
+    }
+    
+    form {
+        height: 12rem;
+        border-right: 2px solid rgb(210, 97, 97);
+        padding: 0 7rem;
+    }
+    
+    #mesbox h2 {
+        font-size: 3rem;
+        font-family: 'Exo 2', sans-serif;
+        color: rgb(228, 61, 61);
+        margin: 1rem auto;
+    }
+    
+    #feedback {
+        background-color: rgba(60, 121, 129, 0.274);
+        border: 2px solid black;
+        border-radius: 6px;
+        height: 4rem;
+        width: 90%;
+        margin-bottom: 0.3rem;
+        color: white;
+        padding: 1rem;
+    }
+    
+    #feedback:hover {
+        background-color: rgba(52, 98, 103, 0.459);
+    }
+    
+    #submit {
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+        background-color: rgb(25, 125, 139);
+        border: 2px solid rgb(25, 125, 139);
+        border-radius: 5px;
+        color: white;
+    }
+    
+    #submit:hover {
+        background-color: black;
+        border: 2px solid rgb(25, 125, 139);
+        color: rgb(25, 125, 139);
+        transition: 0.2s ease-in;
+        font-weight: bold;
+    }
+    
+    #continfo {
+        color: white;
+        margin: auto 8rem;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
     #contact h4 {
-        font-size: 1.8rem;
+        font-size: 3rem;
+        margin: 0 auto 1rem auto;
+        color: #9bcddf;
     }
-}
+    
+    #contact p {
+        margin: 0;
+    }
+    
+    #mail {
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: 'Nunito Sans', sans-serif;
+        color: rgb(228, 61, 61);
+    }
+    
+    #mail:hover {
+        color: rgb(255, 111, 0);
+        text-decoration: underline;
+        transition: 0.2s ease-in;
+    }
+    
+    .icons {
+        margin: 1rem 0.5rem;
+        height: 2.3rem;
+        opacity: 0.8;
+    }
+    
+    .icons:hover {
+        opacity: 1;
+        transition: 0.2s ease-in;
+    }
+    /* ------------responsive-------------------------------- */
+    
+    @media only screen and (max-width: 1321px) {
+        #about_me {
+            height: 40rem;
+        }
+        #ab_pic {
+            height: 19rem;
+        }
+        #info {
+            font-size: 1.25rem;
+        }
+        #tech_head {
+            font-size: 4rem;
+        }
+        #toolcont {
+            width: 60rem;
+        }
+        #skills {
+            height: 70rem;
+        }
+        #mesbox h2 {
+            font-size: 2.2rem;
+        }
+        #contact h4 {
+            font-size: 2.2rem;
+        }
+    }
+    
+    @media only screen and (max-width: 1081px) {
+        #about_me {
+            width: 90%;
+            padding: 0 5%;
+            height: 29rem;
+        }
+        #ab_pic {
+            height: 16rem;
+        }
+        #ab_topic {
+            font-size: 2rem;
+        }
+        #info {
+            font-size: 1rem;
+        }
+        #mesbox h2 {
+            font-size: 1.7rem;
+        }
+        #contact h4 {
+            font-size: 1.7rem;
+        }
+        form {
+            padding: 0 4rem;
+        }
+        #contact {
+            height: 15rem;
+        }
+        #continfo {
+            margin: auto 3rem;
+        }
+        /* .skills{
+        height:;
+    } */
+        #toolcont {
+            width: 59rem;
+        }
+        .skills {
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+    
+    @media only screen and (max-width: 967px) {
+        #about_me {
+            height: 36rem;
+        }
+        #toolcont {
+            width: 46rem;
+            font-size: 1.7rem;
+            margin: 3rem auto;
+        }
+        #skills {
+            height: 51rem;
+        }
+        .skills {
+            height: 11rem;
+            width: 11rem;
+        }
+        .skills .skillName h4 {
+            margin: 4rem 1rem;
+            font-size: 1.6rem;
+        }
+        .skills:hover .skillName {
+            top: 7rem;
+        }
+        .skills:hover .content h2 {
+            margin: 3rem auto 0 auto;
+        }
+        .skills:hover .skillName h4 {
+            margin: 0.5rem;
+            font-size: 1.8rem;
+            letter-spacing: 3px;
+        }
+        #mesbox h2 {
+            font-size: 1.3rem;
+        }
+        #contact h4 {
+            font-size: 1.3rem;
+        }
+        form {
+            height: 10rem;
+            padding: 0 2rem;
+        }
+        #feedback {
+            height: 2rem;
+        }
+        #submit {
+            font-size: 0.6rem;
+        }
+        #continfo p,
+        #mail {
+            font-size: 0.8rem;
+        }
+        #contact {
+            height: 8rem;
+        }
+        #continfo {
+            margin: 0 2rem;
+        }
+        .icons {
+            height: 1.7rem;
+            margin: 0.8rem 0.3rem;
+        }
+    }
+    
+    @media only screen and (max-width: 755px) {
+        #about_me {
+            flex-direction: column-reverse;
+            height: 40rem;
+            padding-top: 2rem;
+        }
+        #toolcont {
+            width: 39rem;
+            font-size: 1.7rem;
+            margin: 2rem auto;
+        }
+        #skills {
+            height: 43rem;
+        }
+        .skills {
+            height: 9rem;
+            width: 9rem;
+        }
+        .skills .skillName h4 {
+            margin: 3.3rem 0.2rem;
+            font-size: 1.6rem;
+        }
+        .skills:hover .skillName {
+            top: 5.7rem;
+        }
+        .skills:hover .content h2 {
+            margin: 2.1rem auto 0 auto;
+        }
+        .skills:hover .skillName h4 {
+            font-size: 1.4rem;
+        }
+        #tech_head {
+            font-size: 3rem;
+        }
+        #pr_heading {
+            font-size: 4rem;
+        }
+        .pr_name {
+            font-size: 2.7rem;
+        }
+        .pr_nameAbt {
+            font-size: 1rem;
+        }
+        .pr_details {
+            font-size: 0.7rem;
+        }
+        .pr_modules {
+            flex-wrap: wrap;
+        }
+        nav {
+            display: none;
+        }
+        .pr_modules .module {
+            font-size: 0.6rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 0.6rem;
+            padding: 0.3rem;
+            font-weight: lighter;
+        }
+    }
+    
+    @media only screen and (max-width: 649px) {
+        #about_me {
+            height: 56rem;
+        }
+        #toolcont {
+            width: 29rem;
+        }
+        #skills {
+            height: 56rem;
+        }
+        #about {
+            padding: 2.8rem 1.4rem;
+        }
+        #pr_heading {
+            font-size: 3rem;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        #tech_head {
+            font-size: 2.8rem;
+        }
+        #navbar li {
+            margin: 1rem 1.3rem;
+        }
+        #about_me {
+            height: 70rem;
+        }
+        .about_cont {
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #info {
+            font-size: 1.2rem;
+        }
+        #ab_topic {
+            font-size: 2.3rem;
+        }
+        #ab_pic {
+            height: 14rem;
+        }
+        #toolcont {
+            margin: 3.5rem auto;
+            width: 23rem;
+        }
+        .skills {
+            margin: 1rem;
+        }
+        #skills {
+            height: 49rem;
+            margin-top: 8rem;
+        }
+        #contact {
+            height: 27rem;
+            flex-direction: column;
+        }
+        form {
+            margin-bottom: 2rem;
+            border-right: 0;
+            padding: 0;
+            height: 13rem;
+            border-bottom: 2px solid rgb(228, 61, 61);
+        }
+        #feedback {
+            height: 4rem;
+        }
+        #submit {
+            font-size: 0.8rem;
+            border: none;
+            margin: 0.5rem 0;
+        }
+        #mesbox h2 {
+            font-size: 1.5rem;
+        }
+        #contact h4 {
+            font-size: 1.8rem;
+        }
+    }
