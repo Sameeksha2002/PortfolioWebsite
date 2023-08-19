@@ -8,7 +8,7 @@
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
-        background-image: url(bodybackground.jpg);
+        background-image: url(images/bodybackground.jpg);
         background-repeat: repeat;
         background-position: center;
         background-size: auto;
@@ -31,7 +31,7 @@
     /* ----------------------------------home--------------------------------------------------- */
     
     #mainhome {
-        background-image: url(underback2.png);
+        background-image: url(images/underback2.png);
         /* z-index: -1; */
     }
     
@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-image: url(mountain\ 5.png);
+        background-image: url(images/mountain\ 5.png);
         /* background-attachment: fixed; */
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,7 +195,7 @@
     /* --------------------------techtools------------------------ */
     
     #skills {
-        height: 50rem;
+        height: 70rem;
         width: 95%;
         margin: 17rem auto 5rem auto;
     }
@@ -511,7 +511,7 @@
             width: 60rem;
         }
         #skills {
-            height: 70rem;
+            height: 90rem;
         }
         #mesbox h2 {
             font-size: 2.2rem;
@@ -573,7 +573,7 @@
             margin: 3rem auto;
         }
         #skills {
-            height: 51rem;
+            height: 71rem;
         }
         .skills {
             height: 11rem;
@@ -638,7 +638,7 @@
             margin: 2rem auto;
         }
         #skills {
-            height: 43rem;
+            height: 56rem;
         }
         .skills {
             height: 9rem;
@@ -697,7 +697,7 @@
             width: 29rem;
         }
         #skills {
-            height: 56rem;
+            height: 79rem;
         }
         #about {
             padding: 2.8rem 1.4rem;
@@ -738,7 +738,7 @@
             margin: 1rem;
         }
         #skills {
-            height: 49rem;
+            height: 70rem;
             margin-top: 8rem;
         }
         #contact {
